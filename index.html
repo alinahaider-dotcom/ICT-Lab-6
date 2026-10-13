@@ -2,43 +2,111 @@
 <html>
 <head>
 <title>Form</title>
+
 <style>
+
 body
 {
-background-color:grey;
+background-color:gainsboro;
 }
-h1
+h2
 {
-colour:red; 
+color:red;
+text-align:center;
 }
+table
+{
+border:2px solid black;
+}
+td
+{
+background-color:#c6e0ff;
+}
+td.label
+{
+font-weight:bold;
+text-align:right;
+color:black;
+}
+input, select
+{
+background-color:white;
+}
+
 </style>
 </head>
 
 <body>
-<form action=&quot;/action_page.php&quot;&gt;>
-<lable for="fname">Name:</lable><br>
-<input type="text" id="fname" placeholder="Enter Your Name" name="fname"><br>
+<form action="/action_page.php">
 
-<lable for="fname">eMail:</lable><br>
-<input type="email" value="info@continental.pk"><br>
+<table border="1">
+<tr>
+<th colspan="2"><h2>Continental Hotal Reservation Form</h2></th>
+</tr>
 
-<lable for="fname">Mobile No:</lable><br>
-<input type="number" placeholder="Enter your cell number"><br>
+<tr>
+<td>Name</td>
+<td><input type="text" id="fname" placeholder="Enter Your Name" name="fname"><br>
+</td>
+</tr>
 
-<lable for="fname">Arrival Time:</lable><br>
-<input type="time" placeholder="Enter your arrival time"><br>
+<tr>
+<td>eMail</td>
+<td><input type="email" value="info@continental.pk"><br></td>
+</tr>
 
-<lable for="fname">Departure:</lable><br>
-<input type="text"><input type="number"><br>
 
-<input type="number"><br>
-<input type="checkbox">Male<br>
-<input type="checkbox">Female<br>
+<tr>
+<td>Mobile No</td>
+<td><input type="number" placeholder="Enter your cell number"><br></td>
+</tr>
 
-<input type="radio" name="radioselection">Male<br>
-<input type="radio" name="radioselection">Female<br>
+<tr>
+<td>Arrival Time</td>
+<td><input type="number" placeholder="Enter your arrival time"><br>
+</td>
+</tr>
 
-<input type="submit" value="Submit">
+<tr>
+<td>Departure</td>
+<td><input type="text"><input type="number"><br>
+</td>
+</tr>
+
+<tr>
+<td>Room Type</td>
+<td><input type="radio"name="radioselection">Single<input type="radio" name="radioselection">Double<br>
+<input type="radio" name="radioselection">Presidential Suit<br>
+</td>
+</tr>
+
+<tr>
+<td>Preferences</td>
+<td><input type="checkbox">Non Smoking<br>
+<input type="checkbox">Internet<br>
+<input type="checkbox">Firm Mattress<br>
+</td>
+</tr>
+
+<tr>
+<td>Mode Of Payment</td>
+<td><input type="checkbox">Cash <input type="checkbox">Check<br>
+<input type="checkbox">Credit Card
+<select id="card" name="card">
+<option value="card">Select Card</option>
+<option value="cash">Cash</option>
+<option value="check">Check</option>
+<option value="credit card">Credit Card</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<th colspan="2"><input type="submit" value="Send Data"></th>
+</tr>
+
+</table>
+
 </form>
 </body>
 
