@@ -1,0 +1,60 @@
+body {
+background-color: powderblue;
+font-family: Verdona;
+}
+#container {
+  width: 800px;
+  margin: 20px;
+  padding: 10px;
+  background-color: white;
+}
+
+#header {
+  background-color: lightcyan;
+  padding: 10px;
+  text-align: right;
+}
+
+#friends {
+  float: left;
+  width: 150px;
+  margin: 10px;
+  padding: 10px;
+  border: 3px solid teal;
+  background-color: turquoise;
+}
+
+.entry {
+  float: right;
+  clear: right;
+  width: 560px;
+  margin: 10px;
+  padding: 10px;
+  border: 3px double lightblue;
+  background-color: lightcyan;
+}
+
+.entry img {
+  float: right;
+  width: 180px;
+  margin-left: 10px;
+}
+
+.date {
+  font-weight: bold;
+  border-bottom: 2px dashed blue;
+}
+
+h1 {
+  color: teal;
+  font-weight: bold;
+}
+h2 {
+  color: teal;
+}
+h3 {
+  color: teal;
+}
+p {
+  color: teal;
+}
